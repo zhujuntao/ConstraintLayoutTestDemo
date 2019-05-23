@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!--ayout_constraintVertical_chainStyle属性。-->
+    <!--chainStyle有如下几种：-->
+    <!--spread、spread inside、weighted、packed。-->
+    <!--layout_constraintHorizontal_chainStyle属性-->
+
+
+
+
+    <TextView
+        android:id="@+id/bt_one"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="button_one"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/bt_two"
+        app:layout_constraintHorizontal_weight="1"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        />
+
+    <TextView
+        android:id="@+id/bt_two"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:text="button_two"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/bt_one"
+        app:layout_constraintRight_toLeftOf="@+id/bt_3"
+        app:layout_constraintHorizontal_weight="1"
+        />
+    <TextView
+        android:id="@+id/bt_3"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:background="@android:color/holo_red_dark"
+        android:text="button-three"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/bt_two"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintHorizontal_weight="1"/>
+
+
+
+
+
+
+
+</android.support.constraint.ConstraintLayout>
