@@ -9,8 +9,14 @@
     <!--spread、spread inside、weighted、packed。-->
     <!--layout_constraintHorizontal_chainStyle属性-->
 
+    <!--spread - 元素将被展开（默认样式）-->
+    <!--加权链 - 在spread模式下，如果某些小部件设置为MATCH_CONSTRAINT，则它们将拆分可用空间-->
 
+    <!--spread_inside - 类似，但链的端点将不会扩展-->
 
+    <!--packed - 链的元素将被打包在一起。 孩子的水平或垂直偏差属性将影响包装元素的定位-->
+
+   <!---->
 
     <TextView
         android:id="@+id/bt_one"
@@ -23,7 +29,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/bt_two"
         app:layout_constraintHorizontal_weight="1"
-        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintHorizontal_chainStyle="packed"
         />
 
     <TextView
